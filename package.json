@@ -1,0 +1,15 @@
+{
+  "name": "bigint",
+  "version": "1.0.0",
+  "description": "Task 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Alexander Ozornin",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
