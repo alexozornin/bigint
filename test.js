@@ -12,6 +12,7 @@ describe('sumBigIntegers', () => {
         chai.assert.equal(sumBigIntegers('1', '2'), '3');
         chai.assert.equal(sumBigIntegers('11', '8'), '19');
         chai.assert.equal(sumBigIntegers('1', '14'), '15');
+        chai.assert.equal(sumBigIntegers('35', '17'), '52');
     });
     it('Sums regular numbers and zeros', () => {
         chai.assert.equal(sumBigIntegers('1', '0'), '1');
@@ -20,6 +21,7 @@ describe('sumBigIntegers', () => {
     });
     it('Sums big numbers', () => {
         chai.assert.equal(sumBigIntegers('111111111111111111111111111111111111111111111111111111111111', '911111111111111111111111111111111111111111111111111111111111'), '1022222222222222222222222222222222222222222222222222222222222');
+        chai.assert.equal(sumBigIntegers('1223222222222222222222222222222222222222222222222222222222222522999', '820222222222222222222222222222222222222222222222222222222222522222'), '2043444444444444444444444444444444444444444444444444444444445045221');
     });
     it('Throws error on non-string values', () => {
         chai.assert.throws(() => {
